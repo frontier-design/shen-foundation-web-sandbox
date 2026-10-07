@@ -21,6 +21,10 @@
       "type": "image",
       "image": "/media/carousel-image-1.webp",
       "caption": "caption"
+    },
+    {
+      "type": "video",
+      "video": "https://adcq3xook5cajgm3.public.blob.vercel-storage.com/videos/commonwealth-1vmz59xn/1920x1080-82765370.mp4"
     }
   ],
   "heroVideo": "https://adcq3xook5cajgm3.public.blob.vercel-storage.com/videos/commonwealth-kq6ay5ih/1280x720-2279777.mp4"
