@@ -89,11 +89,8 @@ content:
               path: public/media
           - name: imageVideo
             label: Video (optional)
-            type: string
-            description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
-            pattern:
-              regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-              message: "Use \"Add video\" at the top of this page to add a video."
+            type: video
+            description: "Plays muted on a loop instead of the image. Under 20 MB loads more smoothly."
       - name: videoStatus
         label: Video status
         type: text
@@ -204,11 +201,8 @@ content:
           path: public/media
       - name: heroVideo
         label: Video (optional)
-        type: string
-        description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
-        pattern:
-          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-          message: "Use \"Add video\" at the top of this page to add a video."
+        type: video
+        description: "Plays muted on a loop over the hero image. Under 20 MB loads more smoothly."
       - name: videoStatus
         label: Video status
         type: text
@@ -277,11 +271,10 @@ content:
               path: public/media
           - name: photoVideo
             label: Video (optional)
-            type: string
-            description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
-            pattern:
-              regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-              message: "Use \"Add video\" at the top of this page to add a video."
+            type: video
+            description: "Plays instead of the photo. Only videos under 20 MB play here."
+            options:
+              cards: only
 
   - name: artists
     label: Artists
@@ -345,11 +338,10 @@ content:
           path: public/media
       - name: thumbnailVideo
         label: Video (optional)
-        type: string
-        description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
-        pattern:
-          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-          message: "Use \"Add video\" at the top of this page to add a video."
+        type: video
+        description: "Plays instead of the image, also on cards (cards only play videos under 20 MB)."
+        options:
+          cards: also
       - name: videoStatus
         label: Video status
         type: text
@@ -430,11 +422,10 @@ content:
           path: public/media
       - name: heroVideo
         label: Video (optional)
-        type: string
-        description: "Added with \"Add video\" at the top of this page (it also plays in the homepage carousel). Clear this field to remove the video."
-        pattern:
-          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-          message: "Use \"Add video\" at the top of this page to add a video."
+        type: video
+        description: "Plays instead of the hero image, also in the homepage carousel and on cards (cards only play videos under 20 MB)."
+        options:
+          cards: also
       - name: videoStatus
         label: Video status
         type: text
@@ -492,12 +483,9 @@ content:
             fields:
               - name: video
                 label: Video
-                type: string
+                type: video
                 required: true
-                description: "Added with \"Add video\" at the top of this page."
-                pattern:
-                  regex: '^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-                  message: "Use \"Add video\" at the top of this page to add a video."
+                description: "Plays muted on a loop. Under 20 MB loads more smoothly."
               - name: poster
                 label: Poster image (optional)
                 type: image
@@ -591,11 +579,10 @@ content:
           path: public/media
       - name: imageVideo
         label: Background video (optional)
-        type: string
-        description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
-        pattern:
-          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
-          message: "Use \"Add video\" at the top of this page to add a video."
+        type: video
+        description: "Plays instead of the background image, also on cards (cards only play videos under 20 MB)."
+        options:
+          cards: also
       - name: videoStatus
         label: Video status
         type: text

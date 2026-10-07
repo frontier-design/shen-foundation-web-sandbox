@@ -17,7 +17,7 @@ On conflicts in the files below, keep the sandbox side. Never push the sandbox t
 | File | Difference | Why |
 |---|---|---|
 | `SANDBOX.md` | This file | — |
-| `.pages.yml` | The 7 video-field `pattern.regex` values also accept the sandbox store host `adcq3xook5cajgm3.public.blob.vercel-storage.com`, alongside the production host. Fields: `home` → `callout.imageVideo`; `aboutPage` → `heroVideo`; `aboutPage` → `people[].photoVideo`; `artists` → `thumbnailVideo`; `exhibitions` → `heroVideo`; `exhibitions` → gallery block `video` → `video` (no `^$\|` empty option there); `events` → `imageVideo`. | Pages CMS reads `.pages.yml` as is and can't use environment variables. Production keeps only its own host. |
+| `.pages.yml` | The 7 video fields (`home` → `callout.imageVideo`; `aboutPage` → `heroVideo`, `people[].photoVideo`; `artists` → `thumbnailVideo`; `exhibitions` → `heroVideo` and gallery block `video` → `video`; `events` → `imageVideo`) use **`type: video`** (the staging CMS's upload field, with `options.cards` per spot) instead of `type: string` with a store-host pattern. | **Ahead of production**, not sandbox-only: this is the change that rolls out to `shen-foundation-web` once the video field is live in the production CMS. The hosted Pages CMS doesn't know `type: video`. |
 | `README.md` | Preview and live URLs point to the sandbox project | Documentation only |
 | `api/cron/cleanup-videos.js` | `DRY_RUN = true` (only a difference once production switches to `false`) | Never delete in the sandbox |
 | `content/**`, `public/media/**` | Test edits made through the staging CMS | Test data |
