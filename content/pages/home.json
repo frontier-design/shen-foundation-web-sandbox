@@ -1,6 +1,6 @@
 {
   "callout": {
-    "enabled": false,
+    "enabled": true,
     "feature": {
       "type": "exhibition",
       "exhibition": "content/exhibitions/danh-vo-guldenhof.json"
