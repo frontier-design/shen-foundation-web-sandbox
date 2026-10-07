@@ -1,12 +1,11 @@
 {
   "callout": {
-    "enabled": true,
+    "enabled": false,
     "feature": {
       "type": "exhibition",
       "exhibition": "content/exhibitions/danh-vo-guldenhof.json"
     },
-    "image": "/media/danh-vo-guldenhof-landing.jpeg",
-    "imageVideo": ""
+    "image": "/media/danh-vo-guldenhof-landing.jpeg"
   },
   "grid": [
     {
@@ -30,6 +29,5 @@
     "content/exhibitions/in-aliens-we-trust.json",
     "content/exhibitions/dynamic-spaces.json",
     "content/exhibitions/soft-machines.json"
-  ],
-  "videoStatus": ""
+  ]
 }
