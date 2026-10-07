@@ -1,6 +1,6 @@
 # SANDBOX — differences from production
 
-This repo (`frontier-design/shen-foundation-web-sandbox`) is a private mirror of `frontier-design/shen-foundation-web`. It's used to test the self-hosted CMS ("Frontier CMS Dev" app, staging CMS) without touching production.
+This repo (`frontier-design/shen-foundation-web-sandbox`) is a mirror of `frontier-design/shen-foundation-web`. It is **public** (since 2026-10-07), like the production repo, because Vercel's Pro team only deploys commits to private repos from authors linked to a team member; public, every commit (CMS saves, Actions) deploys exactly as in production. It holds nothing beyond the public site repo except this file and the sandbox store host. Never commit secrets here. It's used to test the self-hosted CMS ("Frontier CMS Dev" app, staging CMS) without touching production.
 
 **Nothing listed here is ever copied back to `shen-foundation-web`.** Changes flow one way only: production → sandbox.
 
