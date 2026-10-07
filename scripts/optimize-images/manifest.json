@@ -152,6 +152,14 @@
       "width": 2000,
       "height": 1245
     },
+    "/media/smoke-test-image.jpg": {
+      "sha256": "612866d151f5115b65ab79bf8b12161d26fd1ed2cd0bd7277b96b235e0c34800",
+      "action": "metadata",
+      "bytesBefore": 35482,
+      "bytesAfter": 35464,
+      "width": 800,
+      "height": 600
+    },
     "/media/sung-tieu-portrait.jpeg": {
       "sha256": "232990db0294be49dd9d36acd75e812c5e759cf45fe4656bc028a9558bec6ef4",
       "action": "metadata",
