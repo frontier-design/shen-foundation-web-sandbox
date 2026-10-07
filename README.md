@@ -4,8 +4,8 @@
 
 The site has two branches:
 
-- **`preview`**: the working branch. Pages CMS edits it, and Vercel deploys it to the preview site: https://shen-foundation-web-git-preview-frontier-design.vercel.app/
-- **`main`**: the live site, https://shen-foundation-web.vercel.app
+- **`preview`**: the working branch. Pages CMS edits it, and Vercel deploys it to the preview site: https://shen-foundation-web-sandbox-git-preview-frontier-design.vercel.app/
+- **`main`**: the live site, https://shen-foundation-web-sandbox.vercel.app
 
 The preview site shows a "Preview" badge in the corner and is hidden from search engines. The live site has neither.
 
@@ -13,7 +13,7 @@ The preview site shows a "Preview" badge in the corner and is hidden from search
 
 1. Open [Pages CMS](https://app.pagescms.org) and check that the branch picker shows **`preview`**. Pages CMS can remember the last branch you used, so check every time; edits saved on `main` skip the preview step.
 2. Edit content. Every save becomes a commit on `preview`.
-3. Wait about a minute, then check your changes on the preview site: https://shen-foundation-web-git-preview-frontier-design.vercel.app/
+3. Wait about a minute, then check your changes on the preview site: https://shen-foundation-web-sandbox-git-preview-frontier-design.vercel.app/
 4. When everything looks right, click **Publish to live site** in the Pages CMS sidebar and confirm.
 5. The live site updates about a minute later.
 

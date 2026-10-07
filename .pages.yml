@@ -92,7 +92,7 @@ content:
             type: string
             description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
             pattern:
-              regex: '^$|^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+              regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
               message: "Use \"Add video\" at the top of this page to add a video."
       - name: videoStatus
         label: Video status
@@ -207,7 +207,7 @@ content:
         type: string
         description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
         pattern:
-          regex: '^$|^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
           message: "Use \"Add video\" at the top of this page to add a video."
       - name: videoStatus
         label: Video status
@@ -280,7 +280,7 @@ content:
             type: string
             description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
             pattern:
-              regex: '^$|^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+              regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
               message: "Use \"Add video\" at the top of this page to add a video."
 
   - name: artists
@@ -348,7 +348,7 @@ content:
         type: string
         description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
         pattern:
-          regex: '^$|^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
           message: "Use \"Add video\" at the top of this page to add a video."
       - name: videoStatus
         label: Video status
@@ -433,7 +433,7 @@ content:
         type: string
         description: "Added with \"Add video\" at the top of this page (it also plays in the homepage carousel). Clear this field to remove the video."
         pattern:
-          regex: '^$|^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
           message: "Use \"Add video\" at the top of this page to add a video."
       - name: videoStatus
         label: Video status
@@ -496,7 +496,7 @@ content:
                 required: true
                 description: "Added with \"Add video\" at the top of this page."
                 pattern:
-                  regex: '^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+                  regex: '^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
                   message: "Use \"Add video\" at the top of this page to add a video."
               - name: poster
                 label: Poster image (optional)
@@ -594,7 +594,7 @@ content:
         type: string
         description: "Added with \"Add video\" at the top of this page. Clear this field to remove the video."
         pattern:
-          regex: '^$|^https://faq0catz0eljtbgc\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
+          regex: '^$|^https://(?:faq0catz0eljtbgc|adcq3xook5cajgm3)\.public\.blob\.vercel-storage\.com/videos/[a-z0-9-]+/\d+x\d+(-\d+)?\.(mp4|webm)$'
           message: "Use \"Add video\" at the top of this page to add a video."
       - name: videoStatus
         label: Video status
