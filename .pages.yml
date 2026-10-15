@@ -117,6 +117,7 @@ content:
                   search: title,subtitle
                   value: "{subtitle}"
                   label: "{title} — {subtitle}"
+                  thumbnail: heroImage
           - name: event
             label: Event
             fields:
