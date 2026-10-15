@@ -144,14 +144,6 @@
       "width": 374,
       "height": 534
     },
-    "/media/large-import-test.jpg": {
-      "sha256": "31ed1e5d3feb68aceea93e53b86d526827d46545554266d6431822036e65d3ba",
-      "action": "resized",
-      "bytesBefore": 6806566,
-      "bytesAfter": 3530058,
-      "width": 3200,
-      "height": 2182
-    },
     "/media/presentation-examples/suki.webp": {
       "sha256": "3d6bef2bdee7ebc20f6bc98554d5d2c7ba17f6400aca6a9afed8188b2e20bd68",
       "action": "unchanged",
