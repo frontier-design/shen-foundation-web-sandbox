@@ -1,0 +1,57 @@
+name: Import large image
+run-name: Import ${{ inputs.path }}
+
+# Started by the self-hosted CMS (cms.theshenfoundation.org) for images over
+# about 3 MB, which are too large for a normal Pages CMS upload. Inputs are
+# only read through environment variables.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Temporary upload on the Blob store (tmp/media/…)
+        required: true
+        type: string
+      path:
+        description: Where the optimized image goes, e.g. public/media/photo.jpg
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-media-${{ inputs.path }}
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out preview
+        uses: actions/checkout@v4
+        with:
+          ref: preview
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: scripts/optimize-images/package-lock.json
+
+      - name: Cache oxipng
+        uses: actions/cache@v4
+        with:
+          path: scripts/optimize-images/.bin
+          key: oxipng-10.2.1-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Install optimizer dependencies
+        run: npm --prefix scripts/optimize-images ci
+
+      - name: Download, optimize, commit and push
+        env:
+          UPLOAD_URL: ${{ inputs.url }}
+          MEDIA_PATH: ${{ inputs.path }}
+          BLOB_HOST: ${{ vars.BLOB_HOST || 'faq0catz0eljtbgc.public.blob.vercel-storage.com' }}
+        run: node scripts/import-media/import.mjs
